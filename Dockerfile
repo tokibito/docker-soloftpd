@@ -8,4 +8,4 @@ VOLUME /srv/soloftpd/
 
 CMD ["soloftpd", "--config=/usr/src/app/soloftpd.conf"]
 
-EXPOSE 21 30000-49999
+EXPOSE 21 30000-30009
