@@ -6,6 +6,8 @@ RUN mkdir /srv/soloftpd/
 
 VOLUME /srv/soloftpd/
 
-CMD ["soloftpd", "--config=/usr/src/app/soloftpd.conf"]
+ENV OPTIONS ""
 
-EXPOSE 21 30000-30009
+CMD soloftpd --config=/usr/src/app/soloftpd.conf $OPTIONS
+
+EXPOSE 21 50000-50009
